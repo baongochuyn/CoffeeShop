@@ -33,27 +33,27 @@
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpShowTable = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.cbFood = new System.Windows.Forms.ComboBox();
-            this.btnAddFood = new System.Windows.Forms.Button();
             this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
+            this.btnAddFood = new System.Windows.Forms.Button();
+            this.cbFood = new System.Windows.Forms.ComboBox();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lvBill = new System.Windows.Forms.ListView();
-            this.btnCheckOut = new System.Windows.Forms.Button();
-            this.btnDiscount = new System.Windows.Forms.Button();
-            this.nmDiscount = new System.Windows.Forms.NumericUpDown();
-            this.btnSwitchTable = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.btnSwitchTable = new System.Windows.Forms.Button();
+            this.nmDiscount = new System.Windows.Forms.NumericUpDown();
+            this.btnDiscount = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -64,14 +64,15 @@
             this.informationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(690, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1035, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(81, 29);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -81,28 +82,29 @@
             this.profileToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
-            this.informationToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.informationToolStripMenuItem.Size = new System.Drawing.Size(122, 29);
             this.informationToolStripMenuItem.Text = "Information";
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.profileToolStripMenuItem.Text = "Profile";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // flowLayoutPanel1
+            // flpShowTable
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 27);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(410, 336);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flpShowTable.Location = new System.Drawing.Point(0, 42);
+            this.flpShowTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.flpShowTable.Name = "flpShowTable";
+            this.flpShowTable.Size = new System.Drawing.Size(615, 517);
+            this.flpShowTable.TabIndex = 1;
             // 
             // panel1
             // 
@@ -110,66 +112,23 @@
             this.panel1.Controls.Add(this.btnAddFood);
             this.panel1.Controls.Add(this.cbFood);
             this.panel1.Controls.Add(this.cbCategory);
-            this.panel1.Location = new System.Drawing.Point(416, 27);
+            this.panel1.Location = new System.Drawing.Point(624, 42);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(274, 69);
+            this.panel1.Size = new System.Drawing.Size(411, 106);
             this.panel1.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lvBill);
-            this.panel2.Location = new System.Drawing.Point(416, 99);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(274, 189);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.numericUpDown1);
-            this.panel3.Controls.Add(this.btnSwitchTable);
-            this.panel3.Controls.Add(this.nmDiscount);
-            this.panel3.Controls.Add(this.btnDiscount);
-            this.panel3.Controls.Add(this.btnCheckOut);
-            this.panel3.Location = new System.Drawing.Point(416, 294);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(274, 69);
-            this.panel3.TabIndex = 3;
-            // 
-            // cbCategory
-            // 
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(3, 11);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(146, 21);
-            this.cbCategory.TabIndex = 0;
-            // 
-            // cbFood
-            // 
-            this.cbFood.FormattingEnabled = true;
-            this.cbFood.Location = new System.Drawing.Point(3, 38);
-            this.cbFood.Name = "cbFood";
-            this.cbFood.Size = new System.Drawing.Size(146, 21);
-            this.cbFood.TabIndex = 1;
-            // 
-            // btnAddFood
-            // 
-            this.btnAddFood.Location = new System.Drawing.Point(156, 11);
-            this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(75, 48);
-            this.btnAddFood.TabIndex = 2;
-            this.btnAddFood.Text = "Add";
-            this.btnAddFood.UseVisualStyleBackColor = true;
             // 
             // nmFoodCount
             // 
-            this.nmFoodCount.Location = new System.Drawing.Point(234, 27);
+            this.nmFoodCount.Location = new System.Drawing.Point(351, 42);
+            this.nmFoodCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nmFoodCount.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.nmFoodCount.Name = "nmFoodCount";
-            this.nmFoodCount.Size = new System.Drawing.Size(35, 20);
+            this.nmFoodCount.Size = new System.Drawing.Size(52, 26);
             this.nmFoodCount.TabIndex = 3;
             this.nmFoodCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nmFoodCount.Value = new decimal(new int[] {
@@ -178,81 +137,136 @@
             0,
             0});
             // 
+            // btnAddFood
+            // 
+            this.btnAddFood.Location = new System.Drawing.Point(234, 17);
+            this.btnAddFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddFood.Name = "btnAddFood";
+            this.btnAddFood.Size = new System.Drawing.Size(112, 74);
+            this.btnAddFood.TabIndex = 2;
+            this.btnAddFood.Text = "Add";
+            this.btnAddFood.UseVisualStyleBackColor = true;
+            // 
+            // cbFood
+            // 
+            this.cbFood.FormattingEnabled = true;
+            this.cbFood.Location = new System.Drawing.Point(4, 58);
+            this.cbFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbFood.Name = "cbFood";
+            this.cbFood.Size = new System.Drawing.Size(217, 28);
+            this.cbFood.TabIndex = 1;
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(4, 17);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(217, 28);
+            this.cbCategory.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.lvBill);
+            this.panel2.Location = new System.Drawing.Point(624, 152);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(411, 291);
+            this.panel2.TabIndex = 3;
+            // 
             // lvBill
             // 
             this.lvBill.HideSelection = false;
-            this.lvBill.Location = new System.Drawing.Point(0, 3);
+            this.lvBill.Location = new System.Drawing.Point(0, 5);
+            this.lvBill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lvBill.Name = "lvBill";
-            this.lvBill.Size = new System.Drawing.Size(274, 186);
+            this.lvBill.Size = new System.Drawing.Size(409, 284);
             this.lvBill.TabIndex = 0;
             this.lvBill.UseCompatibleStateImageBehavior = false;
             // 
-            // btnCheckOut
+            // panel3
             // 
-            this.btnCheckOut.Location = new System.Drawing.Point(194, 10);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(75, 48);
-            this.btnCheckOut.TabIndex = 4;
-            this.btnCheckOut.Text = "Check out";
-            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.panel3.Controls.Add(this.numericUpDown1);
+            this.panel3.Controls.Add(this.btnSwitchTable);
+            this.panel3.Controls.Add(this.nmDiscount);
+            this.panel3.Controls.Add(this.btnDiscount);
+            this.panel3.Controls.Add(this.btnCheckOut);
+            this.panel3.Location = new System.Drawing.Point(624, 452);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(411, 106);
+            this.panel3.TabIndex = 3;
             // 
-            // btnDiscount
+            // numericUpDown1
             // 
-            this.btnDiscount.Location = new System.Drawing.Point(99, 10);
-            this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Size = new System.Drawing.Size(75, 25);
-            this.btnDiscount.TabIndex = 4;
-            this.btnDiscount.Text = "Discount";
-            this.btnDiscount.UseVisualStyleBackColor = true;
-            // 
-            // nmDiscount
-            // 
-            this.nmDiscount.Location = new System.Drawing.Point(100, 38);
-            this.nmDiscount.Name = "nmDiscount";
-            this.nmDiscount.Size = new System.Drawing.Size(74, 20);
-            this.nmDiscount.TabIndex = 4;
-            this.nmDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 58);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(111, 26);
+            this.numericUpDown1.TabIndex = 6;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSwitchTable
             // 
-            this.btnSwitchTable.Location = new System.Drawing.Point(3, 10);
+            this.btnSwitchTable.Location = new System.Drawing.Point(4, 15);
+            this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSwitchTable.Name = "btnSwitchTable";
-            this.btnSwitchTable.Size = new System.Drawing.Size(75, 25);
+            this.btnSwitchTable.Size = new System.Drawing.Size(112, 38);
             this.btnSwitchTable.TabIndex = 5;
             this.btnSwitchTable.Text = "SwitchTable";
             this.btnSwitchTable.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // nmDiscount
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(4, 38);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(74, 20);
-            this.numericUpDown1.TabIndex = 6;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nmDiscount.Location = new System.Drawing.Point(150, 58);
+            this.nmDiscount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nmDiscount.Name = "nmDiscount";
+            this.nmDiscount.Size = new System.Drawing.Size(111, 26);
+            this.nmDiscount.TabIndex = 4;
+            this.nmDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnDiscount
+            // 
+            this.btnDiscount.Location = new System.Drawing.Point(148, 15);
+            this.btnDiscount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.Size = new System.Drawing.Size(112, 38);
+            this.btnDiscount.TabIndex = 4;
+            this.btnDiscount.Text = "Discount";
+            this.btnDiscount.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Location = new System.Drawing.Point(291, 15);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(112, 74);
+            this.btnCheckOut.TabIndex = 4;
+            this.btnCheckOut.Text = "Check out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
             // 
             // fTableManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 364);
+            this.ClientSize = new System.Drawing.Size(1035, 560);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpShowTable);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "coffeeShop";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,7 +279,7 @@
         private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpShowTable;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.NumericUpDown nmFoodCount;
         private System.Windows.Forms.Button btnAddFood;

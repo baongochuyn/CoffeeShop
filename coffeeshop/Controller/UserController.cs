@@ -22,14 +22,17 @@ namespace coffeeshop.Controller
             private set { instance = value; }
         }
 
-        public bool CheckPassword(string name,string pass)
+        public bool CheckPassword(string name, string pass)
         {
-            string jsonString = File.ReadAllText("C:\\STUDY\\IT\\s03\\coffeeshop\\coffeeshop\\json\\user.json");
+            //string jsonString = File.ReadAllText("C:\\STUDY\\IT\\s03\\coffeeshop\\coffeeshop\\json\\user.json");
+            var path = Directory.GetParent(System.Environment.CurrentDirectory).Parent.FullName;
 
+            string fileName = path + "\\json\\user.json";
+            string jsonString = File.ReadAllText(fileName);
             List<User> listUser = JsonConvert.DeserializeObject<List<User>>(jsonString);
             foreach (User user in listUser)
             {
-                if(user.username.Equals(name) && user.password.Equals(pass))
+                if (user.username.Equals(name) && user.password.Equals(pass))
                 {
                     return true;
                 }

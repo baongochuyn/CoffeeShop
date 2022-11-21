@@ -1,0 +1,22 @@
+[
+  {
+    "Id": 1,
+    "Status": "dispo"
+  },
+  {
+    "Id": 2,
+    "Status": "dispo"
+  },
+  {
+    "Id": 3,
+    "Status": "indispo"
+  },
+  {
+    "Id": 4,
+    "Status": "indispo"
+  },
+  {
+    "Id": 5,
+    "Status": "dispo"
+  }
+]

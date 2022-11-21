@@ -46,10 +46,12 @@ namespace coffeeshop
             //    password = "tata",
             //    isAdmin = false
             //};
+            //var path = Directory.GetParent(System.Environment.CurrentDirectory).Parent.FullName;
 
-            string jsonString = File.ReadAllText("C:\\STUDY\\IT\\s03\\coffeeshop\\coffeeshop\\json\\user.json");
+            //string fileName = path + ".\\json\\user.json";
+            //string jsonString = File.ReadAllText(fileName);
 
-            List<User> listUser = JsonSerializer.Deserialize<List<User>>(jsonString);
+            //List<User> listUser = JsonSerializer.Deserialize<List<User>>(jsonString);
             string userName = txbName.Text;
             string passWord = txbPassWord.Text;
             if (UserController.Instance.CheckPassword(userName,passWord))

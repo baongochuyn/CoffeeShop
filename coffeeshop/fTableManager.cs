@@ -1,4 +1,6 @@
-﻿using System;
+﻿using coffeeshop.Controller;
+using coffeeshop.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,12 +13,26 @@ using System.Windows.Forms;
 namespace coffeeshop
 {
     public partial class fTableManager : Form
-    {
+    { 
         public fTableManager()
         {
             InitializeComponent();
+            LoadTable();
         }
+        #region Method
+        void LoadTable()
+        {
+            var table = new Table();
+            List<Table> tables = TableController.Instance.LoadTableController();
+            foreach(Table elm in tables)
+            {
+                Button button = new Button();
+                button.Text = elm.Id.ToString();
 
+                flpShowTable.Controls.Add(button);
+            }
+        }
+        #endregion
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAccountProfile f = new fAccountProfile();
@@ -30,5 +46,7 @@ namespace coffeeshop
             f.ShowDialog();
             this.Show();
         }
+        
+
     }
 }

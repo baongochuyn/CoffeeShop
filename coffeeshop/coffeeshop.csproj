@@ -79,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\TableController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="fAccountProfile.cs">
       <SubType>Form</SubType>
@@ -104,6 +105,7 @@
     <Compile Include="fTableManager.Designer.cs">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\Table.cs" />
     <Compile Include="model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,6 +130,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="json\table.json" />
     <None Include="json\user.json" />
     <None Include="json\admin.json" />
     <None Include="packages.config" />
