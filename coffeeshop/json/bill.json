@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "IdTable": 1,
+    "DateCheckIn": "2/3/2022",
+    "DateCheckOut": "2/3/2022",
+    "Status": null
+  },
+  {
+    "Id": 2,
+    "IdTable": 2,
+    "DateCheckIn": "2/3/2022",
+    "DateCheckOut": "2/3/2022",
+    "Status": null
+  },
+  {
+    "Id": 3,
+    "IdTable": 3,
+    "DateCheckIn": "2/3/2022",
+    "DateCheckOut": "2/3/2022",
+    "Status": null
+  },
+  {
+    "Id": 4,
+    "IdTable": 4,
+    "DateCheckIn": "2/3/2022",
+    "DateCheckOut": "2/3/2022",
+    "Status": null
+  },
+  {
+    "Id": 5,
+    "IdTable": 5,
+    "DateCheckIn": "2/3/2022",
+    "DateCheckOut": "2/3/2022",
+    "Status": null
+  }
+]

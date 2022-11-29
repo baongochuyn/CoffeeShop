@@ -21,7 +21,10 @@ namespace coffeeshop.Controller
             get { if (instance == null) instance = new TableController(); { return instance; } }
             private set { instance = value; }
         }
-        
+
+        public static int TableWidth = 90;
+        public static int TableHeight = 90;
+
         public List<Table> LoadTableController()
         {
             var path = Directory.GetParent(System.Environment.CurrentDirectory).Parent.FullName;
@@ -30,6 +33,25 @@ namespace coffeeshop.Controller
             string jsonString = File.ReadAllText(fileName);
             List<Table> listTable = JsonConvert.DeserializeObject<List<Table>>(jsonString);
             return listTable;
+        }
+        public bool CheckTableDispo(int Id)
+        {
+            var isDispo = false;
+            var path = Directory.GetParent(System.Environment.CurrentDirectory).Parent.FullName;
+
+            string fileName = path + "\\json\\table.json";
+            string jsonString = File.ReadAllText(fileName);
+            List<Table> listTable = JsonConvert.DeserializeObject<List<Table>>(jsonString);
+
+            foreach(Table table in listTable)
+            {
+                if(table.Id.Equals(Id) && table.Status == "indispo")
+                {
+                    isDispo = true;
+                    break;
+                }
+            }
+            return isDispo;
         }
     }
 }

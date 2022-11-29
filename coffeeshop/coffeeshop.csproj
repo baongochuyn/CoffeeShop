@@ -79,8 +79,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\BillInfoController.cs" />
+    <Compile Include="Controller\BilllController.cs" />
+    <Compile Include="Controller\CategoryController.cs" />
+    <Compile Include="Controller\FoodController.cs" />
+    <Compile Include="Controller\MenuByTableController.cs" />
     <Compile Include="Controller\TableController.cs" />
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="CultureIndfo.cs" />
     <Compile Include="fAccountProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,11 @@
     <Compile Include="fTableManager.Designer.cs">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\Bill.cs" />
+    <Compile Include="model\BillInfo.cs" />
+    <Compile Include="model\BillInfoByTable.cs" />
+    <Compile Include="model\Category.cs" />
+    <Compile Include="model\Food.cs" />
     <Compile Include="model\Table.cs" />
     <Compile Include="model\User.cs" />
     <Compile Include="Program.cs" />
@@ -130,6 +141,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="json\bill.json" />
+    <None Include="json\billInfo.json" />
+    <None Include="json\category.json" />
+    <None Include="json\food.json" />
     <None Include="json\table.json" />
     <None Include="json\user.json" />
     <None Include="json\admin.json" />

@@ -1,0 +1,38 @@
+[
+  {
+    "IdFood": 1,
+    "FoodName": "Food1",
+    "IdCategory": 1,
+    "Price": 15
+  },
+  {
+    "IdFood": 3,
+    "FoodName": "Food2",
+    "IdCategory": 1,
+    "Price": 15
+  },
+  {
+    "IdFood": 2,
+    "FoodName": "Food3",
+    "IdCategory": 1,
+    "Price": 15
+  },
+  {
+    "IdFood": 5,
+    "FoodName": "Food4",
+    "IdCategory": 1,
+    "Price": 15
+  },
+  {
+    "IdFood": 15,
+    "FoodName": "Food5",
+    "IdCategory": 1,
+    "Price": 15
+  },
+  {
+    "IdFood": 16,
+    "FoodName": "Food6",
+    "IdCategory": 1,
+    "Price": 15
+  }
+]

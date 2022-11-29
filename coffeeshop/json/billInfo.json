@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "IdBill": 2,
+    "IdFood": 3,
+    "Count": 13
+  },
+  {
+    "Id": 2,
+    "IdBill": 2,
+    "IdFood": 1,
+    "Count": 11
+  },
+  {
+    "Id": 3,
+    "IdBill": 2,
+    "IdFood": 5,
+    "Count": 2
+  },
+  {
+    "Id": 5,
+    "IdBill": 4,
+    "IdFood": 3,
+    "Count": 1
+  },
+  {
+    "Id": 6,
+    "IdBill": 3,
+    "IdFood": 2,
+    "Count": 6
+  },
+  {
+    "Id": 9,
+    "IdBill": 3,
+    "IdFood": 5,
+    "Count": 3
+  }
+]

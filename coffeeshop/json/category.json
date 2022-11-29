@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 1,
+    "CategoryName": "Boisson"
+  },
+  {
+    "Id": 1,
+    "CategoryName": "Dessert"
+  },
+  {
+    "Id": 1,
+    "CategoryName": "Plat"
+  }
+]
